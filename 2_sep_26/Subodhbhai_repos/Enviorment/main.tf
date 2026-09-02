@@ -23,12 +23,11 @@ module "pip_module" {
 
 }
 
-module "vm_module" {
-  depends_on = [module.snk, module.pip_module]
-  source     = "../Child Module/VM"
-  vms        = var.vms
-
-}
+# module "vm_module" {
+#   depends_on = [module.snk, module.pip_module]
+#   source     = "../Child Module/VM"
+#   vms        = var.vms
+# }
 
 
 
